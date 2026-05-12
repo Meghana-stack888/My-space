@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Space Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+
+        <div class="sidebar">
+
+            <h2>My Space ✨</h2>
+
+            <ul>
+
+                  <li>Home</li>
+
+    <li id="moodBtn">Mood</li>
+
+    <li id="notesBtn">Notes</li>
+
+    <li id="memoriesBtn">Memories</li>
+
+    <li id="selfcareBtn">Self Care</li>
+
+    <li id="stickyBtn">Sticky Wall</li>
+
+</ul>
+        </div>
+
+
+
+        <!-- MAIN CONTENT -->
+
+       <div class="main-content">
+         <!-- TOP BAR -->
+
+            <div class="top-bar">
+
+                <input type="text" placeholder="Search here...">
+
+                <div class="top-icons">
+
+    <span id="bellIcon">🔔</span>
+<div class="notification-box" id="notificationBox">
+
+    🌸 Take care of yourself today 💜
+
+</div>
+    <label for="profileUpload">
+
+        <img id="profilePreview" src="images/profile.png" alt="profile">
+
+    </label>
+
+    <input type="file" id="profileUpload" hidden>
+
+</div>
+
+            </div>
+
+
+
+            <!-- GREETING SECTION -->
+
+            <div class="greeting">
+
+                <h1 id="welcomeText"></h1>
+
+                <p>
+                    Take a deep breath, you're doing your best....💜
+                </p>
+
+           
+
+    </div>
+
+    <div class="cards">
+
+        <!-- MOOD CARD -->
+
+        <div class="card-box mood-card" id="moodSection">
+
+            <h3>Today's Mood 🌸</h3>
+
+            <div class="mood-options">
+
+                <button>😊 Happy</button>
+
+                <button>😌 Calm</button>
+
+                <button>🥺 Emotional</button>
+
+                <button>😴 Tired</button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- NOTES CARD -->
+
+        <div class="card-box notes-card" id="notesSection">
+
+            <h3>Quick Notes ✍️</h3>
+            <textarea id="noteInput" placeholder="Write your thoughts here..."></textarea>
+
+<button class="save-btn" id="saveNote">Save Note</button>
+
+        </div>
+
+
+
+
+       <!-- MEMORIES CARD -->
+
+<div class="card-box memory-card" id="memoriesSection">
+
+    <h3>Memories 📸</h3>
+
+    <div class="memory-upload">
+
+        <input type="file" id="memoryInput" multiple>
+
+        <button class="upload-btn">
+            Upload Memory
+        </button>
+
+        <div id="memoryGallery"></div>
+
+    </div>
+
+</div>
+
+        <!-- SELF CARE CARD -->
+
+      <div class="card-box selfcare-card" id="selfcareSection">
+
+    <h3>Self Care 💜</h3>
+
+    <div class="self-care-list">
+
+        <label>
+            <input type="checkbox">
+            Drink Water
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Skincare Routine
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Sleep Early
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Positive Thoughts
+        </label>
+
+    </div>
+
+</div>
+
+
+
+<!-- STICKY WALL CARD -->
+
+<div class="card-box sticky-card" id="stickySection">
+
+    <h3>Sticky Wall 📝</h3>
+    <input 
+    type="text" 
+    id="stickyInput" 
+    placeholder="Write a sticky note..."
+>
+
+<button id="addStickyBtn">
+    Add Note
+</button>
+
+    <div class="sticky-notes">
+
+        <div class="sticky pink">
+            Call Mom 💜
+        </div>
+
+        <div class="sticky yellow">
+            Drink Water 🌸
+        </div>
+
+        <div class="sticky purple">
+            Finish Project ✨
+        </div>
+
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+           
+<script src="dashboard.js"></script>
+</body>
+</html>
